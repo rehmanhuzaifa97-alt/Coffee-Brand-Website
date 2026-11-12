@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BREW NOIR — Coffee Beyond Ordinary</title>
+  <meta name="description" content="Discover Brew Noir, a universe of extraordinary specialty coffee.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-logo">BREW NOIR<span>.</span></div>
+    <div class="loader-line"></div>
+    <p>PREPARING YOUR COFFEE UNIVERSE</p>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <a href="#home" class="logo">
+       <svg viewBox="0 0 60 60" width="42" height="42"
+       xmlns="http://www.w3.org/2000/svg">
+    <circle cx="30" cy="30" r="25"
+      fill="none" stroke="#C99B62" stroke-width="1.3"/>
+    <path d="M30 9 C15 21 18 40 30 50 C42 40 45 21 30 9Z"
+      fill="none" stroke="#E4B77D" stroke-width="2.5"/>
+    <path d="M30 18 Q21 30 30 43 Q39 30 30 18Z"
+      fill="#C99B62"/>
+    <path d="M30 20 L30 42"
+      stroke="#21140D" stroke-width="1.5"/>
+  </svg>
+  <span>BREW NOIR<span class="brand-dot">.</span></span>
+    </a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit Us</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="bag-button" id="bagButton">
+        CART <span id="cartCount">0</span>
+      </button>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+
+    <div class="hero-background"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <span class="eyebrow">✦ PREMIUM SPECIALTY COFFEE</span>
+
+      <h1>
+        Coffee Beyond
+        <em>Ordinary.</em>
+      </h1>
+
+      <p>
+        More than a drink. A journey through extraordinary
+        flavors, timeless moments and unforgettable experiences.
+      </p>
+
+      <a href="#collection" class="primary-button">
+        EXPLORE THE UNIVERSE <span>↗</span>
+      </a>
+
+      <div class="hero-caption">
+        <span class="caption-line"></span>
+        <span>SCROLL TO DISCOVER</span>
+      </div>
+    </div>
+
+    <figure class="hero-visual">
+      <div class="hv-frame">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85" alt="Freshly brewed specialty coffee">
+      </div>
+      <figcaption>
+        <span>01 / 04</span>
+        <p>The perfect<br>coffee moment</p>
+      </figcaption>
+    </figure>
+
+    <div class="hero-bottom">
+      <span>CRAFTED WITH PASSION</span>
+      <span>EST. 2026</span>
+      <span>KARACHI · PAKISTAN</span>
+    </div>
+
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>COFFEE IS AN EXPERIENCE ✦ A UNIVERSE IN EVERY CUP ✦ SIP SLOWLY ✦</span>
+      <span>COFFEE IS AN EXPERIENCE ✦ A UNIVERSE IN EVERY CUP ✦ SIP SLOWLY ✦</span>
+    </div>
+  </div>
+
+  <!-- COLLECTION -->
+  <section class="collection section-padding" id="collection">
+
+    <div class="section-heading reveal">
+      <div>
+        <span class="eyebrow">01 / SIGNATURE COLLECTION</span>
+        <h2>Discover Your <em>Universe.</em></h2>
+      </div>
+
+      <p>Ten unique blends.<br>Ten unforgettable personalities.</p>
+    </div>
+
+    <div class="flavour-filter" id="flavourFilter" role="group" aria-label="Filter by flavour">
+      <button class="chip active" data-f="all">All</button>
+      <button class="chip" data-f="bold">Bold</button>
+      <button class="chip" data-f="smooth">Smooth</button>
+      <button class="chip" data-f="fruity">Fruity</button>
+      <button class="chip" data-f="sweet">Sweet</button>
+      <button class="chip" data-f="spiced">Spiced</button>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card reveal" data-tags="bold">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=900&q=85" alt="Premium coffee beans">
+          <span class="product-tag">BESTSELLER</span>
+          <span class="product-number">01</span>
+        </div>
+
+        <div class="product-info">
+          <div>
+            <h3>Eclipse Blend</h3>
+            <p>Dark chocolate · Caramel · Bold</p>
+          </div>
+          <strong>Rs. 2,100</strong>
+        </div>
+
+        <button class="add-button" data-product="Eclipse Blend">
+          ADD TO CART <span>+</span>
+        </button>
+      </article>
+
+      <article class="product-card reveal" data-tags="fruity smooth">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="Freshly brewed specialty coffee">
+          <span class="product-tag">SIGNATURE</span>
+          <span class="product-number">02</span>
+        </div>
+
+        <div class="product-info">
+          <div>
+            <h3>Sunrise Blend</h3>
+            <p>Honey · Citrus · Floral</p>
+          </div>
+          <strong>Rs. 2,300</strong>
+        </div>
+
+        <button class="add-button" data-product="Sunrise Blend">
+          ADD TO CART <span>+</span>
+        </button>
+      </article>
+
+      <article class="product-card reveal" data-tags="bold sweet">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=85" alt="Rich espresso coffee">
+          <span class="product-tag">LIMITED EDITION</span>
+          <span class="product-number">03</span>
+        </div>
+
+        <div class="product-info">
+          <div>
+            <h3>Midnight Blend</h3>
+            <p>Hazelnut · Cocoa · Intense</p>
+          </div>
+          <strong>Rs. 2,450</strong>
+        </div>
+
+        <button class="add-button" data-product="Midnight Blend">
+          ADD TO CART <span>+</span>
+        </button>
+      </article>
+
+      <article class="product-card reveal" data-tags="spiced smooth">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=900&q=85" alt="Cardamom Gold">
+          <span class="product-tag">NEW</span>
+          <span class="product-number">04</span>
+        </div>
+        <div class="product-info">
+          <div>
+            <h3>Cardamom Gold</h3>
+            <p>Cardamom · Honey · Warm spice</p>
+          </div>
+          <strong>Rs. 2,350</strong>
+        </div>
+        <button class="add-button" data-product="Cardamom Gold">
+          ADD TO CART <span>+</span>
+        </button>
+      </article>
+
+      <article class="product-card reveal" data-tags="sweet smooth">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=85" alt="Hazelnut Dream">
+          <span class="product-tag">FLAVOURED</span>
+          <span class="product-number">05</span>
+        </div>
+        <div class="product-info">
+          <div>
+            <h3>Hazelnut Dream</h3>
+            <p>Hazelnut · Vanilla · Buttery</p>
+          </div>
+          <strong>Rs. 2,250</strong>
+        </div>
+        <button class="add-button" data-product="Hazelnut Dream">
+          ADD TO CART <span>+</span>
+        </button>
+      </article>
+
+      <article class="product-card reveal" data-tags="fruity sweet">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=900&q=85" alt="Rose Pistachio">
+          <span class="product-tag">LIMITED</span>
+          <span class="product-number">06</span>
+        </div>
+        <div class="product-info">
+          <div>
+            <h3>Rose Pistachio</h3>
+            <p>Rose · Pistachio · Silky</p>
+          </div>
+          <strong>Rs. 2,550</strong>
+        </div>
+        <button class="add-button" data-product="Rose Pistachio">
+          ADD TO CART <span>+</span>
+        </button>
+      </article>
+
+      <article class="product-card reveal" data-tags="sweet smooth spiced">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85" alt="Saffron Silk">
+          <span class="product-tag">NEW</span>
+          <span class="product-number">07</span>
+        </div>
+        <div class="product-info">
+          <div>
+            <h3>Saffron Silk</h3>
+            <p>Saffron · Almond · Creamy</p>
+          </div>
+          <strong>Rs. 2,600</strong>
+        </div>
+        <button class="add-button" data-product="Saffron Silk">
+          ADD TO CART <span>+</span>
+        </button>
+      </article>
+
+      <article class="product-card reveal" data-tags="sweet fruity">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85" alt="Coconut Cloud">
+          <span class="product-tag">FLAVOURED</span>
+          <span class="product-number">08</span>
+        </div>
+        <div class="product-info">
+          <div>
+            <h3>Coconut Cloud</h3>
+            <p>Coconut · Toasted almond · Tropical</p>
+          </div>
+          <strong>Rs. 2,250</strong>
+        </div>
+        <button class="add-button" data-product="Coconut Cloud">
+          ADD TO CART <span>+</span>
+        </button>
+      </article>
+
+      <article class="product-card reveal" data-tags="bold sweet">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=85" alt="Maple Pecan">
+          <span class="product-tag">SEASONAL</span>
+          <span class="product-number">09</span>
+        </div>
+        <div class="product-info">
+          <div>
+            <h3>Maple Pecan</h3>
+            <p>Maple · Pecan · Toasted</p>
+          </div>
+          <strong>Rs. 2,400</strong>
+        </div>
+        <button class="add-button" data-product="Maple Pecan">
+          ADD TO CART <span>+</span>
+        </button>
+      </article>
+
+      <article class="product-card reveal" data-tags="bold fruity">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=900&q=85" alt="Dark Cherry Noir">
+          <span class="product-tag">LIMITED</span>
+          <span class="product-number">10</span>
+        </div>
+        <div class="product-info">
+          <div>
+            <h3>Dark Cherry Noir</h3>
+            <p>Black cherry · Dark chocolate · Wine-like</p>
+          </div>
+          <strong>Rs. 2,500</strong>
+        </div>
+        <button class="add-button" data-product="Dark Cherry Noir">
+          ADD TO CART <span>+</span>
+        </button>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ADD-ONS -->
+  <section class="addons section-padding" id="addons">
+    <div class="center-heading reveal">
+      <span class="eyebrow">ADD-ONS &amp; EXTRAS</span>
+      <h2>Make It <em>Yours.</em></h2>
+      <p>Flavours, milk and gear to go with your blend.</p>
+    </div>
+    <div class="addon-grid">
+      <article class="addon-card reveal">
+        <span class="addon-tag">Flavour</span>
+        <h3>Caramel Syrup</h3>
+        <p>Golden and buttery. Pours thick.</p>
+        <div class="addon-row"><strong>Rs. 650</strong><button class="add-button addon-btn" data-product="Caramel Syrup">ADD +</button></div>
+      </article>
+      <article class="addon-card reveal">
+        <span class="addon-tag">Flavour</span>
+        <h3>Vanilla Bean Syrup</h3>
+        <p>Real vanilla, soft and round.</p>
+        <div class="addon-row"><strong>Rs. 650</strong><button class="add-button addon-btn" data-product="Vanilla Bean Syrup">ADD +</button></div>
+      </article>
+      <article class="addon-card reveal">
+        <span class="addon-tag">Flavour</span>
+        <h3>Hazelnut Syrup</h3>
+        <p>Toasted, nutty, a little sweet.</p>
+        <div class="addon-row"><strong>Rs. 650</strong><button class="add-button addon-btn" data-product="Hazelnut Syrup">ADD +</button></div>
+      </article>
+      <article class="addon-card reveal">
+        <span class="addon-tag">Milk</span>
+        <h3>Barista Oat Milk</h3>
+        <p>1 litre. Steams silky.</p>
+        <div class="addon-row"><strong>Rs. 480</strong><button class="add-button addon-btn" data-product="Barista Oat Milk">ADD +</button></div>
+      </article>
+      <article class="addon-card reveal">
+        <span class="addon-tag">Gear</span>
+        <h3>Brew Noir Ceramic Mug</h3>
+        <p>Hand-glazed, holds 300 ml.</p>
+        <div class="addon-row"><strong>Rs. 1,400</strong><button class="add-button addon-btn" data-product="Brew Noir Ceramic Mug">ADD +</button></div>
+      </article>
+      <article class="addon-card reveal">
+        <span class="addon-tag">Gear</span>
+        <h3>Paper Filters</h3>
+        <p>Box of 100 for pour-over.</p>
+        <div class="addon-row"><strong>Rs. 550</strong><button class="add-button addon-btn" data-product="Paper Filters">ADD +</button></div>
+      </article>
+      <article class="addon-card reveal">
+        <span class="addon-tag">Gear</span>
+        <h3>Hand Grinder</h3>
+        <p>Steel burrs, fresh grounds.</p>
+        <div class="addon-row"><strong>Rs. 4,900</strong><button class="add-button addon-btn" data-product="Hand Grinder">ADD +</button></div>
+      </article>
+      <article class="addon-card reveal">
+        <span class="addon-tag">Gift</span>
+        <h3>Gift Box</h3>
+        <p>Any blend, wrapped and boxed.</p>
+        <div class="addon-row"><strong>Rs. 1,200</strong><button class="add-button addon-btn" data-product="Gift Box">ADD +</button></div>
+      </article>
+      <article class="addon-card reveal">
+        <span class="addon-tag">Flavour</span>
+        <h3>Cardamom Syrup</h3>
+        <p>Warm, fragrant, a touch floral.</p>
+        <div class="addon-row"><strong>Rs. 650</strong><button class="add-button addon-btn" data-product="Cardamom Syrup">ADD +</button></div>
+      </article>
+      <article class="addon-card reveal">
+        <span class="addon-tag">Flavour</span>
+        <h3>Rose Syrup</h3>
+        <p>Delicate and perfumed. Lovely with milk.</p>
+        <div class="addon-row"><strong>Rs. 650</strong><button class="add-button addon-btn" data-product="Rose Syrup">ADD +</button></div>
+      </article>
+      <article class="addon-card reveal">
+        <span class="addon-tag">Milk</span>
+        <h3>Barista Almond Milk</h3>
+        <p>1 litre. Light, nutty, froths well.</p>
+        <div class="addon-row"><strong>Rs. 520</strong><button class="add-button addon-btn" data-product="Barista Almond Milk">ADD +</button></div>
+      </article>
+      <article class="addon-card reveal">
+        <span class="addon-tag">Gear</span>
+        <h3>Pour-Over Dripper</h3>
+        <p>Ceramic cone for clean, bright cups.</p>
+        <div class="addon-row"><strong>Rs. 3,200</strong><button class="add-button addon-btn" data-product="Pour-Over Dripper">ADD +</button></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- COFFEE DIMENSIONS -->
+  <section class="dimensions section-padding">
+
+    <div class="center-heading reveal">
+      <span class="eyebrow">02 / EXPLORE YOUR MOOD</span>
+      <h2>What Is Your <em>Coffee Universe?</em></h2>
+      <p>Every personality deserves its perfect cup.</p>
+    </div>
+
+    <div class="dimension-grid">
+
+      <article class="dimension-card reveal">
+        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=85" alt="Dark coffee">
+        <div class="dimension-content">
+          <span>01</span>
+          <h3>Eclipse</h3>
+          <p>Bold & Intense</p>
+        </div>
+      </article>
+
+      <article class="dimension-card reveal">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=700&q=85" alt="Coffee brewing">
+        <div class="dimension-content">
+          <span>02</span>
+          <h3>Sunrise</h3>
+          <p>Bright & Uplifting</p>
+        </div>
+      </article>
+
+      <article class="dimension-card reveal">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=700&q=85" alt="Coffee cup">
+        <div class="dimension-content">
+          <span>03</span>
+          <h3>Golden Hour</h3>
+          <p>Warm & Balanced</p>
+        </div>
+      </article>
+
+      <article class="dimension-card reveal">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=700&q=85" alt="Coffee beans">
+        <div class="dimension-content">
+          <span>04</span>
+          <h3>Midnight</h3>
+          <p>Deep & Mysterious</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- BRAND STORY -->
+  <section class="story section-padding" id="story">
+
+    <div class="story-image reveal">
+      <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1100&q=85" alt="Artisan coffee shop">
+      <div class="story-stamp">BREW NOIR<br>EST. 2026</div>
+    </div>
+
+    <div class="story-content reveal">
+      <span class="eyebrow">03 / OUR PHILOSOPHY</span>
+
+      <h2>Born From Passion.<br>Crafted For <em>Dreamers.</em></h2>
+
+      <p>
+        We believe coffee is more than a morning ritual.
+        It is a connection between people, places and possibilities.
+      </p>
+
+      <p>
+        Every bean has a story. Every roast has a personality.
+        Every cup is an opportunity to experience something extraordinary.
+      </p>
+
+      <a href="#visit" class="outline-button">
+        DISCOVER OUR STORY ↗
+      </a>
+    </div>
+
+  </section>
+
+  <!-- COFFEE MATCHER -->
+  <section class="matcher section-padding">
+
+    <div class="center-heading reveal">
+      <span class="eyebrow">04 / YOUR PERSONAL COFFEE GUIDE</span>
+      <h2>Find Your <em>Perfect Blend.</em></h2>
+      <p>Choose your mood. Discover your coffee personality.</p>
+    </div>
+
+    <div class="matcher-box reveal">
+
+      <h3>How do you feel today?</h3>
+
+      <div class="mood-options">
+        <button class="mood-button" data-mood="bold">
+          <span>⚡</span> Bold
+        </button>
+
+        <button class="mood-button" data-mood="smooth">
+          <span>☀</span> Smooth
+        </button>
+
+        <button class="mood-button" data-mood="fruity">
+          <span>✿</span> Fruity
+        </button>
+
+        <button class="mood-button" data-mood="spiced">
+          <span>❋</span> Spiced
+        </button>
+
+        <button class="mood-button" data-mood="sweet">
+          <span>♡</span> Sweet
+        </button>
+
+        <button class="mood-button" data-mood="deep">
+          <span>☾</span> Deep
+        </button>
+      </div>
+
+      <div class="recommendation" id="recommendation">
+        YOUR PERFECT CUP AWAITS.
+      </div>
+
+      <button class="primary-button" id="matchButton">
+        DISCOVER MY BLEND ↗
+      </button>
+
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section section-padding" id="menu">
+
+    <div class="section-heading reveal">
+      <div>
+        <span class="eyebrow">05 / THE MENU</span>
+        <h2>Crafted For Every <em>Moment.</em></h2>
+      </div>
+      <p>Timeless classics.<br>Extraordinary experiences.</p>
+    </div>
+
+    <div class="menu-grid">
+
+      <div class="menu-item">
+        <div><h3>Espresso</h3><p>Pure, rich and bold</p></div>
+        <strong>Rs. 550</strong>
+      </div>
+
+      <div class="menu-item">
+        <div><h3>Flat White</h3><p>Silky and balanced</p></div>
+        <strong>Rs. 750</strong>
+      </div>
+
+      <div class="menu-item">
+        <div><h3>Spanish Latte</h3><p>Creamy and sweet</p></div>
+        <strong>Rs. 900</strong>
+      </div>
+
+      <div class="menu-item">
+        <div><h3>Cold Brew</h3><p>Slow-steeped perfection</p></div>
+        <strong>Rs. 800</strong>
+      </div>
+
+      <div class="menu-item">
+        <div><h3>Caramel Latte</h3><p>Golden caramel notes</p></div>
+        <strong>Rs. 850</strong>
+      </div>
+
+      <div class="menu-item">
+        <div><h3>Signature Mocha</h3><p>Chocolate meets espresso</p></div>
+        <strong>Rs. 950</strong>
+      </div>
+
+    
+      <div class="menu-item">
+        <div><h3>Cardamom Latte</h3><p>Warm spice and honey</p></div>
+        <strong>Rs. 900</strong>
+      </div>
+
+      <div class="menu-item">
+        <div><h3>Pistachio Latte</h3><p>Nutty, creamy, bright green</p></div>
+        <strong>Rs. 1,050</strong>
+      </div>
+
+      <div class="menu-item">
+        <div><h3>Iced Americano</h3><p>Crisp, clean and cold</p></div>
+        <strong>Rs. 650</strong>
+      </div>
+
+      <div class="menu-item">
+        <div><h3>Hazelnut Cappuccino</h3><p>Foam, hazelnut, cocoa dust</p></div>
+        <strong>Rs. 900</strong>
+      </div>
+
+      <div class="menu-item">
+        <div><h3>Affogato</h3><p>Espresso poured over vanilla gelato</p></div>
+        <strong>Rs. 850</strong>
+      </div>
+
+      <div class="menu-item">
+        <div><h3>Rose Cold Foam</h3><p>Cold brew, rose cream cap</p></div>
+        <strong>Rs. 950</strong>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VISIT STORE -->
+  <section class="visit-section section-padding" id="visit">
+
+    <div class="visit-content reveal">
+      <span class="eyebrow">06 / FIND YOUR BREW NOIR</span>
+
+      <h2>Experience Coffee<br><em>Beyond Ordinary.</em></h2>
+
+      <p>
+        Your next coffee ritual is waiting.
+        Visit our flagship coffee experience in Karachi, Pakistan.
+      </p>
+
+      <div class="visit-info">
+        <div>
+          <h4>ADDRESS</h4>
+          <p>12 Seaview Boulevard, Block 4<br>Clifton, Karachi 75600<br>Pakistan</p>
+        </div>
+        <div>
+          <h4>OPENING HOURS</h4>
+          <ul class="hours">
+            <li><span>Mon – Thu</span><b>8:00 AM – 11:00 PM</b></li>
+            <li><span>Fri – Sat</span><b>8:00 AM – 1:00 AM</b></li>
+            <li><span>Sunday</span><b>9:00 AM – 10:00 PM</b></li>
+          </ul>
+        </div>
+        <div>
+          <h4>CONTACT</h4>
+          <p>+92 21 3555 0142<br>hello@brewnoir.com</p>
+        </div>
+      </div>
+
+      <a href="https://maps.google.com/?q=Karachi+Pakistan"
+         target="_blank" rel="noopener"
+         class="primary-button">
+        FIND OUR LOCATION ↗
+      </a>
+    </div>
+
+    <div class="visit-image reveal">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1100&q=85" alt="Coffee house">
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-main">
+      <div>
+        <a href="#home" class="logo footer-logo">✺ BREW NOIR.</a>
+        <p>A universe in every cup.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>EXPLORE</h4>
+        <a href="#collection">Collection</a>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>CONNECT</h4>
+        <a href="https://instagram.com">Instagram ↗</a>
+        <a href="mailto:hello@brewnoir.com">Contact Us</a>
+      </div>
+
+      <div class="newsletter">
+        <h4>JOIN THE UNIVERSE</h4>
+        <p>Stories, flavors and coffee inspiration.</p>
+        <form id="newsletterForm">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">↗</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 BREW NOIR COFFEE. ALL RIGHTS RESERVED.</span>
+      <span>CRAFTED FOR THE LOVE OF COFFEE ✦</span>
+    </div>
+
+  </footer>
+
+  <!-- NOTIFICATION -->
+  <div class="toast" id="toast"></div>
+</body>
+</html>
